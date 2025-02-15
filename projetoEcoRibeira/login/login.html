@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>    
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#"> <svg width="28" viewBox="0 0 91 100" fill="none" style="margin-bottom: 10;" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74.3848 70.378C78.1897 66.59 79.767 61.1351 78.8953 56.1074C78.5356 54.0412 79.3933 51.9062 81.0813 50.6528C86.0761 46.9199 92.0948 42.7323 90.6005 30.4455C89.0647 17.8556 77.4148 10.0317 66.8717 10.9133C64.6165 11.1061 62.4718 9.96284 61.4479 7.96553C60.0505 5.25195 57.7814 2.91027 54.5161 1.40885C48.4421 -1.41493 41.2198 0.141603 36.4879 4.86626L36.4463 4.90763C34.869 6.47792 32.5446 6.90487 30.4277 6.21614C24.838 4.37035 18.2521 5.78911 13.866 10.1556C10.6007 13.4064 9.1063 17.7454 9.38302 22.0017C9.47987 23.5858 9.05097 25.1423 8.01327 26.3545C-3.26308 39.5642 -2.64048 59.4134 9.89495 71.8931C21.8769 83.8219 40.6248 84.9101 53.852 75.1715C55.3048 74.0971 57.1727 73.7113 58.9022 74.2485C64.1875 75.8188 70.1924 74.5379 74.3848 70.378Z" fill="#1CA410"/>
+                    <path d="M69.8186 51.7547C69.8186 52.9668 68.8362 53.9585 67.6048 53.9585H65.0452C54.9311 53.9585 48.6909 60.0607 48.6909 70.6946V97.7752C48.6909 98.9874 47.7086 99.9793 46.4772 99.9793H40.2233C39.0057 99.9793 38.0096 99.0011 38.0096 97.7752V47.0023C38.0096 45.7902 38.9919 44.7985 40.2233 44.7985H45.9653C47.1137 44.7985 48.0683 45.68 48.1652 46.8233C48.3174 48.6691 50.5866 49.5507 51.901 48.2283C54.7927 45.3219 58.9988 43.5587 64.132 43.5587C65.4741 43.5587 66.664 43.6689 67.9784 43.8893C69.03 44.0684 69.8047 44.9913 69.8047 46.052V51.7547H69.8186Z" fill="white"/>
+                    <path opacity="0.8" d="M26.6091 57.1406C33.6516 57.1406 38.937 60.4466 41.4966 65.5156C41.6488 65.8186 41.7179 66.1629 41.7179 66.5073V70.6672C41.7179 72.6232 39.2828 73.6563 37.9407 72.21C35.1043 69.1658 30.9259 67.5404 25.6958 67.5404H23.1362C21.9186 67.5404 20.9225 66.5624 20.9225 65.3365V59.6338C20.9225 58.5732 21.6972 57.6364 22.7488 57.4711C24.0909 57.2507 25.267 57.1406 26.6091 57.1406Z" fill="white"/>
+                    </svg> EcoRibeira</a>
+                    
+                <a href="/home/home.html" style="margin-top: 0.9vh;">Início</a>
+                <a href="/chat/chat.html" style="margin-top: 0.9vh;">Chat</a>
+                <a href="/mapa/mapa.html" style="margin-top: 0.9vh;">Mapa</a>
+            </div>
+            <div class="navbar-right">
+                <a href="#">Suporte</a>
+                <a href="#">Contatos</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="imgCadastrar">
+        <h1> <svg width="40" viewBox="0 0 91 100" fill="none" style="margin-bottom: 10;" xmlns="http://www.w3.org/2000/svg">
+            <path d="M74.3848 70.378C78.1897 66.59 79.767 61.1351 78.8953 56.1074C78.5356 54.0412 79.3933 51.9062 81.0813 50.6528C86.0761 46.9199 92.0948 42.7323 90.6005 30.4455C89.0647 17.8556 77.4148 10.0317 66.8717 10.9133C64.6165 11.1061 62.4718 9.96284 61.4479 7.96553C60.0505 5.25195 57.7814 2.91027 54.5161 1.40885C48.4421 -1.41493 41.2198 0.141603 36.4879 4.86626L36.4463 4.90763C34.869 6.47792 32.5446 6.90487 30.4277 6.21614C24.838 4.37035 18.2521 5.78911 13.866 10.1556C10.6007 13.4064 9.1063 17.7454 9.38302 22.0017C9.47987 23.5858 9.05097 25.1423 8.01327 26.3545C-3.26308 39.5642 -2.64048 59.4134 9.89495 71.8931C21.8769 83.8219 40.6248 84.9101 53.852 75.1715C55.3048 74.0971 57.1727 73.7113 58.9022 74.2485C64.1875 75.8188 70.1924 74.5379 74.3848 70.378Z" fill="#1CA410"/>
+            <path d="M69.8186 51.7547C69.8186 52.9668 68.8362 53.9585 67.6048 53.9585H65.0452C54.9311 53.9585 48.6909 60.0607 48.6909 70.6946V97.7752C48.6909 98.9874 47.7086 99.9793 46.4772 99.9793H40.2233C39.0057 99.9793 38.0096 99.0011 38.0096 97.7752V47.0023C38.0096 45.7902 38.9919 44.7985 40.2233 44.7985H45.9653C47.1137 44.7985 48.0683 45.68 48.1652 46.8233C48.3174 48.6691 50.5866 49.5507 51.901 48.2283C54.7927 45.3219 58.9988 43.5587 64.132 43.5587C65.4741 43.5587 66.664 43.6689 67.9784 43.8893C69.03 44.0684 69.8047 44.9913 69.8047 46.052V51.7547H69.8186Z" fill="white"/>
+            <path opacity="0.8" d="M26.6091 57.1406C33.6516 57.1406 38.937 60.4466 41.4966 65.5156C41.6488 65.8186 41.7179 66.1629 41.7179 66.5073V70.6672C41.7179 72.6232 39.2828 73.6563 37.9407 72.21C35.1043 69.1658 30.9259 67.5404 25.6958 67.5404H23.1362C21.9186 67.5404 20.9225 66.5624 20.9225 65.3365V59.6338C20.9225 58.5732 21.6972 57.6364 22.7488 57.4711C24.0909 57.2507 25.267 57.1406 26.6091 57.1406Z" fill="white"/>
+            </svg> EcoRibeira</h1>
+    </div>
+    
+    <section id="backgroundCadastro" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="modal-dialog" role="document">
+           <div class="modal-content">
+            <div class="modal-body p-5 pt-0">
+                <h1 class="fw-bold mb-1 fs-2" style="font-family: 'Poppins'; color:#2F3367;">Entrar</h1>
+                <small class="text-body-secondary" style="font-family: 'Poppins'; color:#303468; font-weight: 500;">Por favor selecione sua conta.</small>
+                <div class="container mt-3">
+                    <div class="cardLogin card w-100 mx-auto background-color-secondary">
+                        <div class="card-body align-items-center d-flex w-100">
+                            <img src="imgs/user.png" style="width: 5vw; height: 5vw; margin-right: 1vw;" alt="">
+                            <p class="card-text m-3">Bem-vindo(a), Usuário!</p>
+                            <small class="text-body-secondary" style="font-family: 'Poppins'; font-weight: 500; margin-left: 3vw;"><a href="#" class="text-danger" style="text-decoration: none;">Remover</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3 d-flex align-items-center">
+                    <small class="text-body-secondary m-3 p-3" style="font-family: 'Poppins'; font-weight: 500;"><a href="#" class="text-primary">Entrar com outra conta</a></small>
+                    <button class="w-20 btn btn-lg rounded-3 btn-primary" type="submit" style="background-color:#007DFA; font-family: 'Poppins'; font-weight:500;">Entrar  ></button>
+                </div>
+                <hr class="align-items-center w-100 my-2">
+                <div class="container mt-3 d-flex align-items-center">
+                    <small class="text-body-secondary m-3 p-3" style="font-family: 'Poppins'; font-weight: 500;">Não tem uma conta?</small>
+                    <small class="text-body-secondary m-3 p-3" style="font-family: 'Poppins'; font-weight: 500;"><a href="/cadastro/" class="text-primary">Cadastrar-se</a></small>
+                </div>
+           </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

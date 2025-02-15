@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#imgCadastrar {
+    /* camada 1 imagem*/
+    /* camada 2 texto */
+    float: left;
+    position: relative;
+    width:34.11vw;
+    height: 100vh;
+    overflow: hidden; /* Esconde o excesso do blur */display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    color: white;
+}
+#imgCadastrar::before {
+    /* camada 3 filtro*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imgs/reciclagem.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.5px) brightness(0.8); /* Aplica blur e brilho ao mesmo tempo */z-index: -1; /* Coloca o pseudo-elemento(elemento fake) atrás do texto */
+}
+#imgCadastrar::after {
+    /* camada 4 vinheta */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7) 100%);
+    z-index: -1; /* Coloca a vinheta entre a imagem e o texto */
+}
+
+#backgroundCadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8vh;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family:'Poppins';
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+}
+.navbar-right a{
+    color: #3f3e3e;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    color: #4ed80e;
+}
+
+
